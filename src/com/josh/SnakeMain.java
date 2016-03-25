@@ -28,7 +28,14 @@ public class SnakeMain {
 
         Collections.sort(snakeList);
 
-        System.out.println(snakeList);
+
+        System.out.println("Ordered snakes :\n");
+        for (Snake snake : snakeList)
+        {
+            System.out.println("A " + snake.species + " has a venom rating of " + snake.venomRating + ".");
+        }
+
+
 
     }
 }
